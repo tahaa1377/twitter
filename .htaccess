@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^settings/account/?$ account.php
+#RewriteRule ^()$ profile.php?username=$1 [QSA]
+RewriteRule ^home/?$ home.php
+RewriteRule ^/?$ index.php
+#RewriteRule ^profile/?$ profile.php
+RewriteRule ^logout/?$ includs/logout.php
+RewriteRule ^password/?$ password.php
+RewriteRule ^username1/?$ includs/username.php?step=1
+RewriteRule ^username2/?$ includs/username.php?step=2
+RewriteRule ^profileEdit/?$ profileEdit.php
